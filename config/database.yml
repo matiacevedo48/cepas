@@ -83,5 +83,4 @@ test:
 production:
   <<: *default
   database: cepas_production
-  username: cepas
-  password: <%= ENV['CEPAS_DATABASE_PASSWORD'] %>
+  
