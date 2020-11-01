@@ -1,4 +1,4 @@
-class CreateWineStrains < ActiveRecord::Migration[6.0]
+class CreateWineStrains < ActiveRecord::Migration[5.2]
   def change
     create_table :wine_strains do |t|
       t.references :wine, foreign_key: true

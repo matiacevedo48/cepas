@@ -72,3 +72,4 @@ class WineStrainsController < ApplicationController
       params.require(:wine_strain).permit(:wine_id, :strain_id)
     end
 end
+

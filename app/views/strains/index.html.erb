@@ -25,5 +25,10 @@
 </table>
 <br>
 
-<%= link_to 'New Strain', new_strain_path %>
-<%= link_to 'Wines', wines_path %>
+<%= link_to 'New Strain', new_strain_path %> |
+<%= link_to 'Wines', wines_path %> |
+<%= link_to 'Oenologists', oenologists_path %> |
+<%= link_to 'Magazines', magazines_path %> |
+<% if user_signed_in? %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete ,class:"btn btn-light btn-sm ml-2" %>
+<% end %>
